@@ -1,5 +1,6 @@
 package com.llm.staa.chat;
 
+import com.llm.staa.tools.DateTimeTools;
 import org.springframework.ai.chat.client.ChatClient;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -20,6 +21,7 @@ public class ChatController {
     public String chat(@RequestParam String curiosity) {
         return chatClient.prompt()
                 .user(curiosity)
+                .tools(new DateTimeTools())
                 .call()
                 .content();
     }
