@@ -1,4 +1,4 @@
-# Support Ticket AI Assistant (RAG-based)
+# Support Ticket AI Assistant(STAA)(RAG-based)
 
 RAG-powered support ticket assistant built with Spring Boot — retrieves relevant docs via vector search and generates context-aware answers using LLM integration.
 
