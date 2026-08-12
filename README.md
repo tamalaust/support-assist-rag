@@ -16,7 +16,7 @@ RAG-powered support ticket assistant built with Spring Boot — retrieves releva
 
 ## Roadmap
 
-- [ ] LLM API integration with Spring Boot
+- [✓] LLM API integration with Spring Boot
 - [ ] Embedding pipeline + pgvector setup
 - [ ] Full RAG pipeline (retrieval + prompt construction + generation)
 - [ ] Resilience (rate-limit handling, retries)
