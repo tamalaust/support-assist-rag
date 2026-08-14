@@ -7,7 +7,7 @@ RAG-powered support ticket assistant built with Spring Boot — retrieves releva
 ## Planned Tech Stack
 
 - **Backend:** Java, Spring Boot, Spring AI
-- **LLM:** Ollama / Groq (free-tier)
+- **LLM:** Ollama(llama3.2)
 - **Embeddings:** sentence-transformers (local)
 - **Vector Store:** PostgreSQL + pgvector
 - **Caching:** Redis
@@ -16,8 +16,9 @@ RAG-powered support ticket assistant built with Spring Boot — retrieves releva
 
 ## Roadmap
 
-- [✓] LLM API integration with Spring Boot
-- [ ] Embedding pipeline + pgvector setup
+- [x] LLM API integration with Spring Boot
+- [x] Embedding pipeline + pgvector setup
+- [x] Document ingestion + retrieval endpoint
 - [ ] Full RAG pipeline (retrieval + prompt construction + generation)
 - [ ] Resilience (rate-limit handling, retries)
 - [ ] Redis caching layer
