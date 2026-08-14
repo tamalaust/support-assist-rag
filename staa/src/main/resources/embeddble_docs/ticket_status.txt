@@ -1,0 +1,23 @@
+Understanding Support Ticket Statuses
+
+When you contact support, a ticket is created to track your issue. Here is what each status means:
+
+- Open: Your ticket has been received and is in the queue, waiting to be picked up by an agent.
+- In Progress: An agent is actively working on your issue.
+- Waiting on Customer: We have asked you a question or requested more information. The ticket will remain in this state until you respond.
+- Escalated: Your issue has been passed to a specialized team or senior agent because it requires additional expertise.
+- Resolved: The issue has been fixed or answered. The ticket will automatically close after 5 days if there is no further response.
+- Closed: The ticket is complete and no further action is being taken. You can reopen a closed ticket within 30 days by replying to the original ticket email.
+
+Response time expectations:
+- Standard tickets: response within 24 business hours.
+- Priority/urgent tickets (account access, billing issues): response within 4 business hours.
+- Escalated tickets: response within 48 hours due to specialized review.
+
+How to check your ticket status:
+1. Log in to your account.
+2. Go to "Support" then "My Tickets".
+3. Click on the ticket number to see the current status and full conversation history.
+
+How to escalate a ticket yourself:
+If you feel your issue needs urgent attention, reply to the ticket with "URGENT" in the subject line, or use the "Request Escalation" button on the ticket detail page.

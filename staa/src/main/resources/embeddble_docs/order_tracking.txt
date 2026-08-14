@@ -1,0 +1,23 @@
+How to Track Your Order
+
+Once your order is placed, you can track its status at any time.
+
+1. Log in to your account and go to "My Orders".
+2. Click on the order you want to track.
+3. You will see the current status: Processing, Shipped, Out for Delivery, or Delivered.
+4. If the order has shipped, a tracking number and carrier link will be shown so you can see live courier updates.
+
+Order status definitions:
+- Processing: Your order has been received and is being prepared for shipment. This usually takes 1-2 business days.
+- Shipped: Your order has left our warehouse and is with the courier.
+- Out for Delivery: Your order is on the vehicle for delivery today.
+- Delivered: Your order has been delivered to the address on file.
+
+Delayed orders:
+If your order status has not changed for more than 3 business days, it may be delayed due to high demand or courier issues. You can contact support with your order number to get an updated estimate.
+
+Lost or missing package:
+If the tracking shows "Delivered" but you have not received the package, wait 24 hours as couriers sometimes mark packages delivered early. If it still has not arrived, contact support to file a lost package claim within 7 days of the delivery date.
+
+Cancelling an order:
+Orders can only be cancelled while in "Processing" status. Once an order is "Shipped", it cannot be cancelled, but you may be able to refuse delivery or request a return after it arrives.

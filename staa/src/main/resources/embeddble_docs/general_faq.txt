@@ -1,0 +1,19 @@
+General Account FAQ
+
+How do I update my email address?
+Go to Account Settings, then Profile, and click "Edit" next to your email address. You will need to verify the new email by clicking a confirmation link sent to it. Your old email will remain active until the new one is verified.
+
+How do I change my shipping address?
+Go to Account Settings, then Addresses. You can add a new address or edit an existing one. Note: changing your address will not affect orders that have already shipped.
+
+How do I cancel my subscription?
+Go to Account Settings, then Subscriptions, and click "Cancel Subscription". Your access will continue until the end of the current billing period. No partial refunds are issued for the remaining days.
+
+How do I request a refund?
+Refunds can be requested within 30 days of purchase from the Orders page by selecting "Request Refund" on the relevant order. Refunds are processed within 5-7 business days and returned to the original payment method.
+
+How do I contact a human agent instead of the AI assistant?
+If the AI assistant cannot resolve your issue, type "talk to a human" or click "Escalate to Agent" at the bottom of the chat. A support ticket will be created and a human agent will follow up within the standard response time.
+
+How do I delete my account?
+Go to Account Settings, then Privacy, and click "Delete Account". This action is permanent and cannot be undone after 30 days. During the 30-day grace period, you can log in again to cancel the deletion.
