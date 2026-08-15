@@ -21,10 +21,12 @@ This repo covers the **core RAG pipeline only** — LLM integration, embeddings,
 - [x] LLM API integration with Spring Boot
 - [x] Embedding pipeline + pgvector setup
 - [x] Document ingestion + retrieval endpoint
-- [ ] Full RAG pipeline (retrieval + prompt construction + generation)
+- [x] Full RAG pipeline (retrieval + prompt construction + generation)
 - [ ] Resilience (rate-limit handling, retries)
-- [ ] Unit test coverage (happy path)
-- [ ] README: architecture diagram + API examples + design trade-offs
+- [x] Unit test coverage (happy path)
+- [x] README
+- [x] architecture diagram 
+- [ ] API examples
 - [ ] Dockerized deployment
 
 ## Related Modules
