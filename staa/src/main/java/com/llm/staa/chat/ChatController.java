@@ -1,8 +1,7 @@
 package com.llm.staa.chat;
 
-import com.llm.staa.tools.DateTimeTools;
+import com.llm.staa.tools.TicketStatusTools;
 import org.springframework.ai.chat.client.ChatClient;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
@@ -21,7 +20,7 @@ public class ChatController {
     public String chat(@RequestParam String curiosity) {
         return chatClient.prompt()
                 .user(curiosity)
-                .tools(new DateTimeTools())
+                .tools(new TicketStatusTools())
                 .call()
                 .content();
     }

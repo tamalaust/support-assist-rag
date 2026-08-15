@@ -37,7 +37,12 @@ public class DocumentIngestionRunner implements CommandLineRunner {
         Resource[] resources = resolver.getResources("classpath:embeddble_docs/*.txt");
 
         List<Document> allChunks = new ArrayList<>();
-        TextSplitter splitter = TokenTextSplitter.builder().build();
+        TextSplitter splitter = TokenTextSplitter.builder().
+                                         withChunkSize(150)
+                                        .withMinChunkSizeChars(50)
+                                        .withMinChunkLengthToEmbed(5)
+                                        .withMaxNumChunks(10000)
+                                        .build();
 
         for (Resource resource : resources) {
             TextReader textReader = new TextReader(resource);
