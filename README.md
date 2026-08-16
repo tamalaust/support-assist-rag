@@ -22,7 +22,7 @@ This repo covers the **core RAG pipeline only** — LLM integration, embeddings,
 - [x] Embedding pipeline + pgvector setup
 - [x] Document ingestion + retrieval endpoint
 - [x] Full RAG pipeline (retrieval + prompt construction + generation)
-- [ ] Resilience (rate-limit handling, retries)
+- [x] Resilience (rate-limit handling, retries)
 - [x] Unit test coverage (happy path)
 - [x] README
 - [x] architecture diagram 
