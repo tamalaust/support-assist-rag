@@ -1,26 +1,18 @@
 package com.llm.staa.service;
 
 import com.llm.staa.tools.TicketStatusTools;
+import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
-import org.springframework.ai.chat.client.ChatClient;
 import org.springframework.stereotype.Service;
 
 @Service
 @Slf4j
+@RequiredArgsConstructor
 public class TicketService {
 
-    private final ChatClient chatClient;
+    private final LlmInvocationService llmInvocationService;
 
-    public TicketService(ChatClient.Builder chatClientBuilder) {
-        this.chatClient = chatClientBuilder.build();
-    }
-
-    public String getTicketStatus(String userQuery) {
-        log.info("Handling ticket query: {}", userQuery);
-        return chatClient.prompt()
-                .tools(new TicketStatusTools())
-                .user(userQuery)
-                .call()
-                .content();
+    public String getStatus(String userQuery) {
+        return llmInvocationService.callWithTools(userQuery, new TicketStatusTools());
     }
 }

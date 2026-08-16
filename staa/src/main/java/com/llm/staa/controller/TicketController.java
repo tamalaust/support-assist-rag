@@ -16,6 +16,6 @@ public class TicketController {
 
     @GetMapping("/status")
     public String getStatus(@RequestParam String query) {
-        return ticketService.getTicketStatus(query);
+        return ticketService.getStatus(query);
     }
 }
