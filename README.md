@@ -2,8 +2,6 @@
 
 RAG-powered support ticket assistant built with Spring Boot — retrieves relevant docs via vector search and generates context-aware answers using LLM integration.
 
-> 🚧 **Work in Progress** — actively being built. Full documentation, architecture diagram, and setup instructions coming soon.
-
 ## Scope of This Repo
 
 This repo covers the **core RAG pipeline only** — LLM integration, embeddings, vector retrieval, and prompt construction. Caching, hybrid search, and multi-model routing have been split into separate, independently-deployable modules (see [Related Modules](#related-modules)) that integrate with this service over REST.
@@ -26,7 +24,7 @@ This repo covers the **core RAG pipeline only** — LLM integration, embeddings,
 - [x] Unit test coverage (happy path)
 - [x] README
 - [x] architecture diagram 
-- [ ] API examples
+- [x] API examples
 - [ ] Dockerized deployment
 
 ## Related Modules
