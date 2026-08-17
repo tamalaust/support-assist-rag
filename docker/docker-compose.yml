@@ -1,0 +1,69 @@
+version: "3.9"
+
+services:
+
+  postgres:
+    build:
+      context: ./postgres-pgvector
+    container_name: staa-postgres
+    environment:
+      POSTGRES_DB: ${POSTGRES_DB}
+      POSTGRES_USER: ${POSTGRES_USER}
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD}
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+    ports:
+      - "5432:5432"
+    networks:
+      - staa-network
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U ${POSTGRES_USER} -d ${POSTGRES_DB}"]
+      interval: 5s
+      timeout: 5s
+      retries: 5
+
+  ollama:
+    build:
+      context: ./ollama
+    container_name: staa-ollama
+    volumes:
+      - ollama_models:/root/.ollama
+    ports:
+      - "11434:11434"
+    networks:
+      - staa-network
+    healthcheck:
+          test: [ "CMD-SHELL", "ollama list | grep -q nomic-embed-text && ollama list | grep -q llama3.2" ]
+          interval: 10s
+          timeout: 5s
+          retries: 30
+          start_period: 120s
+
+  app:
+    build:
+      context: ..
+      dockerfile: docker/app/Dockerfile
+    container_name: staa-app
+    environment:
+      APPLICATION_NAME: ${APPLICATION_NAME}
+      DATA_SOURCE_URL: ${DATA_SOURCE_URL}
+      DATA_SOURCE_USER_NAME: ${DATA_SOURCE_USER_NAME}
+      DATA_SOURCE_USER_PASS: ${DATA_SOURCE_USER_PASS}
+      SPRING_AI_OLLAMA_BASE_URL: ${SPRING_AI_OLLAMA_BASE_URL}
+    ports:
+      - "8080:8080"
+    depends_on:
+      postgres:
+        condition: service_healthy
+      ollama:
+        condition: service_healthy
+    networks:
+      - staa-network
+
+networks:
+  staa-network:
+    driver: bridge
+
+volumes:
+  postgres_data:
+  ollama_models:
