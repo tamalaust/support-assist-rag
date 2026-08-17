@@ -25,7 +25,7 @@ This repo covers the **core RAG pipeline only** — LLM integration, embeddings,
 - [x] README
 - [x] architecture diagram 
 - [x] API examples
-- [ ] Dockerized deployment
+- [x] Dockerized deployment
 
 ## Related Modules
 
