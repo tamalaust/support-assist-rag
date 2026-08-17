@@ -40,7 +40,7 @@ These are separate repos that plug into this service via REST once ready — not
 
 ## Status
 
-Currently in early development. Star/watch this repo for updates.
+Development Completed.
 
 ## Known Limitations / Future Enhancements
 - Chunk overlap not yet implemented (Spring AI's `TokenTextSplitter` doesn't support it natively) — would improve retrieval accuracy for content near chunk boundaries
